@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>image & floats</title>
+    <style>
+        .w {
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body class="w-75 mx-auto my-4">
+
+    <!--rounded fotografin kenarlarini yuvarlatir-->
+    <img src="images/2.jpeg" alt="" class="rounded w">
+
+    <!--rounded-circle fotografi tamamen yuvarlatilmis yapar, border-radius gibi dusunebilirsin-->
+    <img src="images/3.jpeg" alt="" class="rounded-circle w">
+
+    <!--fotografin etrafina bir cerceve ekler-->
+    <img src="images/4.jpeg" alt="" class="img-thumbnail w">
+
+    <!--fotograf bulundugu container'a sigar, sayfa kuculdukce fotograf da kuculur, scrollbar cikmaz-->
+    <!--max-width 100% height auto demem ile ayni sey fluid-->
+    <img src="images/5.jpeg" alt="" class="img-fluid">
+
+    <br> <br>
+
+    <!--fotograf ortalama-->
+    <!--fotograflar inline etiket oldugu icin oncelikle block etiketine cevirecegim-->
+    <!--mx-auto ile ortalarim ama bunu yapmadan once etiketi block etikete cevirmeyi unutma-->
+    <img src="images/2.jpeg" alt="" class="w d-block mx-auto">
+
+    <br> <br>
+
+    <!--yan yana olan 2 fotografin birini saga birini sola alacagim-->
+
+    <div class="clearfix">
+
+        <img src="images/2.jpeg" alt="" class="w float-left">
+
+        <img src="images/3.jpeg" alt="" class="w float-right">
+
+    </div>
+
+    <!--fotograftan sonra bir metin ekledigimde css kisminda float'tan sonra clearfix olayi vardi-->
+    <!--bootstrap'de sadece class="clearfix" demem yeterli, bu kutuphane icinde clearfix ozelligi kendinden var-->
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum possimus illo officia obcaecati, omnis ut dolores totam delectus, itaque dolor velit rem atque necessitatibus sit eaque aspernatur porro culpa a?
+    </p>
+
+    <br> <br>
+
+    <div class="clearfix">
+
+        <div class="bg-primary p-3 w-25 float-left">
+
+
+
+        </div>
+
+        <div class="bg-danger p-3 w-75 float-left">
+
+
+
+        </div>
+
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum possimus illo officia obcaecati, omnis ut dolores totam delectus, itaque dolor velit rem atque necessitatibus sit eaque aspernatur porro culpa a?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum possimus illo officia obcaecati, omnis ut dolores totam delectus, itaque dolor velit rem atque necessitatibus sit eaque aspernatur porro culpa a?
+    </p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
